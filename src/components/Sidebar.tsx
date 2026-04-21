@@ -60,7 +60,7 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe}) => {
             alt="梁英超"
             className={styles.avatar}
           />
-          <p>lyc，全栈开发工程师，热爱分享技术。拥有5年一线大厂经验，目前专注于前端工程化与性能优化。</p>
+          <p>焦糖坤坤玛奇朵，全栈开发工程师，热爱分享技术。拥有5年一线大厂经验，目前专注于前端工程化与性能优化。</p>
         </div>
       </section>
 

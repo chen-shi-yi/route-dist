@@ -33,16 +33,16 @@ export interface Article {
       tags: ["CSS", "布局"]
     },
     {
-        id: 3,
-        title: "CSS Grid 入门",
-        date: "2030-08-15",
-        author: "张三",
-        summary: "Grid布局是现代CSS布局神器，本文带你掌握二维布局的核心。",
-        contentSections: [
-          { title: "什么是Grid布局？", text: "Grid 是二维布局系统，可同时处理行和列。通过将容器定义为网格，可以轻松地将子元素放置到任何你想要的位置。" }
-        ],
-        tags: ["CSS", "布局"]
-      }
+      id: 3,
+      title: "CSS Grid 实战布局技巧",
+      date: "2030-08-16",
+      author: "张三",
+      summary: "详解Grid常用布局写法，告别浮动与Flex，快速实现响应式网页排版。",
+      contentSections: [
+        { title: "Grid与Flex的区别？", text: "Flex是一维单行/单列布局，Grid是原生二维行列网格布局，更适合页面整体版式、卡片栅格、复杂页面排版开发。" }
+      ],
+      tags: ["CSS", "响应式布局", "前端实战"],
+    }
   ];
   
   export function getArticles(): Article[] {
