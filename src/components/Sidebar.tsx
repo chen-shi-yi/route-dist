@@ -75,9 +75,9 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe}) => {
       <section className={styles.widget}>
         <h3>关注我</h3>
         <ul className={styles.socialLinks}>
-          <li><a href="https://chen-shi-yi.github.io/route-dist/" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://github.com/chen-shi-yi" aria-label="GitHub">GitHub</a></li>
           <li><a href="#" aria-label="Twitter">Twitter</a></li>
-          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          {/* <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li> */}
         </ul>
       </section>
 
