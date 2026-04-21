@@ -75,7 +75,7 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe}) => {
       <section className={styles.widget}>
         <h3>关注我</h3>
         <ul className={styles.socialLinks}>
-          <li><a href="#" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://chen-shi-yi.github.io/route-dist/" aria-label="GitHub">GitHub</a></li>
           <li><a href="#" aria-label="Twitter">Twitter</a></li>
           <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
         </ul>
@@ -100,8 +100,13 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe}) => {
       <section className={styles.widget}>
         <h3>合作伙伴</h3>
         <div className={styles.partners}>
-          <img src={pzPng} alt="Partner 1" />
-          <img src={baiduPng} alt="Partner 2" />
+        <a href='https://www.mercedes-benz.com.cn/'>
+          <img src={pzPng} alt="Partner 1"  />
+        </a>
+          <a href='https://www.bilibili.com/video/BV19V411b7u4?t=30.5'>
+             <img src={baiduPng} alt="Partner 2" />
+          </a>
+         
         </div>
       </section>
     </aside>

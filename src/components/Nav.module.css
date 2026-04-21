@@ -1,42 +1,78 @@
+/* 导航容器整体样式 */
 .nav {
-    background-color: #2c3e50;
-    border-radius: 8px;
-    padding: 0 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #2d3748 0%, #1a2533 100%);
+  border-radius: 16px;
+  padding: 0 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* 导航列表flex布局 */
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 16px 0;
+}
+
+/* 导航链接基础样式 */
+.navList li a {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* 鼠标悬浮样式 */
+.navList li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 当前页面激活态（和你首页蓝色高亮完全匹配） */
+.navList li a.active {
+  background: linear-gradient(135deg, #5b7df8 0%, #3498db 100%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* ========== 暗黑模式自动适配 ========== */
+[data-theme="dark"] .nav {
+  background: linear-gradient(135deg, #121826 0%, #0f141e 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ========== 移动端自适应 ========== */
+@media (max-width: 768px) {
+  .nav {
+    border-radius: 12px;
+    padding: 0 16px;
   }
-  
   .navList {
-    display: flex;               /* 使用 Flexbox 水平排列导航项 */
-    list-style: none;
-    gap: 10px;                   /* 项目间距 */
-    flex-wrap: wrap;             /* 移动端换行 */
+    gap: 8px;
+    padding: 12px 0;
   }
-  
-  .navList li a {                
-    display: inline-block;
-    padding: 15px 20px;
-    color: #ecf0f1;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.2s, color 0.2s;
-    border-radius: 4px;
+  .navList li a {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    border-radius: 10px;
   }
-  
-  /* 同时定义悬停状态（鼠标指针悬停在链接上）和激活状态（链接拥有 .active 类）的样式 */
-  .navList li a:hover,   
-  .navList li a.active {
-    background-color: #3498db;
-    color: white;
+}
+
+@media (max-width: 480px) {
+  .navList {
+    flex-direction: column;
   }
-  
-  /* 移动端：导航项可能占满宽度 */
-  @media (max-width: 480px) {
-    .navList {
-      flex-direction: column;
-      gap: 5px;
-    }
-    .navList li a {
-      display: block;
-      text-align: center;
-    }
+  .navList li a {
+    display: block;
+    text-align: center;
   }
+}
