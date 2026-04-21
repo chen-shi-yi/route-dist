@@ -57,7 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe}) => {
         <div className={styles.authorInfo}>
           <img
             src="https://avatars.githubusercontent.com/u/218383647?u=7741169a993f131d84d5a78a9979cc0073df09a9&v=4&size=64"
-            alt="梁英超"
+            alt="马嘉祺超绝巡飞弹"
             className={styles.avatar}
           />
           <p>焦糖坤坤玛奇朵，全栈开发工程师，热爱分享技术。拥有5年一线大厂经验，目前专注于前端工程化与性能优化。</p>
